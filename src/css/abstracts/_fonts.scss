@@ -1,0 +1,76 @@
+h1
+{
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+}
+
+h2
+{
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing:2px;
+}
+
+
+h3
+{
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 5px;
+}
+
+p
+{
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.form-title
+{
+font-family: 'Jost', sans-serif;
+font-weight: 500;
+line-height: 48px;
+letter-spacing: 2px;
+text-align: left;
+}
+
+.form-field-empty
+{
+font-family: 'Jost', sans-serif;
+font-size: 15px;
+font-weight: 500;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: left;
+color: #ffffff;
+opacity: 0.5;
+}
+
+.form-field-full
+{
+font-family: 'Jost', sans-serif;
+font-size: 15px;
+font-weight: 500;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: left;
+color: #ffffff;
+}
+
+
+.form-field-error
+{
+font-family: 'Jost';
+font-style: italic;
+font-weight: 400;
+font-size: 12px;
+line-height: 26px;
+}

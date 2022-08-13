@@ -1,0 +1,7 @@
+@use '../abstracts' as *;
+nav
+{
+    @include flex-centre;
+    justify-content: space-between;
+}
+

@@ -1,0 +1,5 @@
+// app global css in SCSS form
+@use 'abstracts' as *;
+@use 'components/navigationBar';
+@use 'components/homePage';
+@use 'components/redirectCard';

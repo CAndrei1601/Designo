@@ -1,0 +1,42 @@
+@use './fonts' as *;
+
+@mixin flex-centre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin bg-image {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@mixin flex-wrap-centre {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@mixin position-absolute-centre {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin flex-wrap-gap($gap) {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: calc(100% + #{$gap});
+  margin: calc(-1 * #{$gap}) 0 0 calc(-1 * #{$gap});
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin margin-gap($gap) {
+  margin: $gap + 0px 0 0 $gap + 0px;
+}
+
