@@ -1,42 +1,27 @@
 <template>
   <NavigationBarVue />
-  <HomePageTop />
+  <HomePageTop :head="homeStore.head" />
   <div class="wrapper">
     <section class="card-redirect">
-      <RedirectCard :cards="redirectCardInfo" />
+      <RedirectCard :cards="categorieStore.redirectCardInfo" />
     </section>
   </div>
 </template>
 <script>
+/* eslint-disable */
 import NavigationBarVue from '@/components/NavigationBar.vue'
 import HomePageTop from '@/components/HomePageTop.vue'
 import RedirectCard from '@/components/RedirectCard.vue'
+import { useHomePageStore } from '@/stores/homePageStore'
+import {useCategorieStore} from '@/stores/categorieCardStore'
 
 export default {
-  /* eslint-disable */
-
-  data() {
+  setup() {
+    const homeStore = useHomePageStore()
+    const categorieStore = useCategorieStore()
     return {
-      redirectCardInfo: [
-        {
-          id: 1,
-          title: 'WEB DESIGN',
-          text: 'VIEW PROJECTS',
-          image: require('@/assets/home/mobile/image-web-design.jpg')
-        },
-        {
-          id: 2,
-          title: 'APP DESIGN',
-          text: 'VIEW PROJECTS',
-          image: require('@/assets/home/mobile/image-app-design.jpg')
-        },
-        {
-          id: 3,
-          title: 'GRAPHIC DESIGN',
-          text: 'VIEW PROJECTS',
-          image: require('@/assets/home/mobile/image-graphic-design.jpg')
-        }
-      ]
+      homeStore,
+      categorieStore
     }
   },
   components: {
