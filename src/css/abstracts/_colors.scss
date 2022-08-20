@@ -1,25 +1,34 @@
 @use 'sass:color';
 
-$colors: 
-(peach,  #E7816B ),
- (black, #1D1C1E), 
- (white, #FFFFFF),
- (light-peach,#FFAD9B ),
- (dark-gray,#333136),
- (light-gray,#F1F3F5);
+// $colors: 
+// (peach,  #E7816B ),
+//  (black, #1D1C1E), 
+//  (white, #FFFFFF),
+//  (light-peach,#FFAD9B ),
+//  (dark-gray,#333136),
+//  (light-gray,#F1F3F5);
 
 
-@each $name, $color in $colors {
-  .clr-bg-#{$name} {
-    background: $color;
-  }
-}
+// @each $name, $color in $colors {
+//   .clr-bg-#{$name} {
+//     background: $color;
+//   }
+// }
 
-@each $name, $color in $colors {
-  .clr-cl-#{$name} {
-    color: $color;
-  }
-}
+// @each $name, $color in $colors {
+//   .clr-cl-#{$name} {
+//     color: $color;
+//   }
+// }
+
+
+$peach:#E7816B;
+$black:#1D1C1E;
+$white:#FFFFFF;
+$light-peach:#FFAD9B;
+$dark-gray:#333136;
+$light-gray:#F1F3F5;
+$backdrop:rgba(0,0,0,0.4); 
 
 body
 {

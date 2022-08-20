@@ -3,7 +3,7 @@
     <div class="redirect-card" v-for="card in cards" :key="card.id">
       <img :src="card.image" alt="" class="redirect-card-image" />
       <span class="opacity-layer"></span>
-      <div class="redirect-card-texts clr-cl-white">
+      <div class="redirect-card-texts">
         <h1 class="redirect-card-title">{{ card.title }}</h1>
         <div class="redirect-card-second-container">
           <p class="redirect-card-text">{{ card.text }}</p>

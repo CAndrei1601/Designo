@@ -1,5 +1,5 @@
 <template>
-  <div class="head clr-bg-peach clr-cl-white">
+  <div class="head">
     <h1 class="head-title">{{ head[0].title }}</h1>
     <p class="head-text">{{ head[0].text }}</p>
     <button>{{ head[0].button }}</button>
@@ -19,10 +19,8 @@
   </div>
 </template>
 <script>
-export default
-{
-  props:
-  {
+export default {
+  props: {
     head: Array
   }
 }

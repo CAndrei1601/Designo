@@ -1,9 +1,10 @@
 @use './fonts' as *;
 
-@mixin flex-centre {
+@mixin flex-centre($direct:row) {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: $direct;
 }
 
 @mixin bg-image {
@@ -38,5 +39,13 @@
 
 @mixin margin-gap($gap) {
   margin: $gap + 0px 0 0 $gap + 0px;
+}
+
+@mixin mq($size)
+{
+  @media screen and (min-width:$size) {
+    @content;
+    
+  }
 }
 

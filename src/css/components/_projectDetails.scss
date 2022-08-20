@@ -1,0 +1,51 @@
+@use '../abstracts' as *;
+.project-cards
+{
+    @include flex-centre(column);
+    
+    gap:80px;
+}
+
+.project-card
+{
+     
+    &-container
+    {
+        @include flex-centre(column);
+        gap:32px;
+       
+    }
+
+    &-top
+    {
+        position: relative;
+     
+    }
+
+    &-gradient
+    {
+        position: absolute;
+        top:-20px;
+        left:-5px;
+        border-radius: 50%;
+        width: 202px;
+        height: 202px;
+        background: linear-gradient(90deg, rgba(93, 2, 2, 0.0001) 0%, rgba(93, 2, 2, 0.497569) 100%);
+        mix-blend-mode: normal;
+        opacity: 0.2;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        z-index: 1;
+    }
+    &-image
+    {
+        position: inherit;
+        z-index: 2;
+        margin-bottom: 36px;
+    }
+
+    &-title,
+    &-text
+    {
+        color:$dark-gray;
+    }
+}

@@ -3,5 +3,80 @@ nav
 {
     @include flex-centre;
     justify-content: space-between;
+    background-color: $white;
+    position: fixed;
+    z-index: 99999;
+    top:0;
+    width: 100vw;
+    padding: 35px 24px;
+      @include mq(700px)
+      {
+        padding: 64px 39px;
+      }
 }
 
+.menu-mobile{
+&-backdrop
+{
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+    background-color: $backdrop;
+    position: fixed;
+    top:97px;
+    left:0;
+    
+}
+&-container
+{
+    background-color:$black;
+    width: 100vw;
+    opacity: 100%;
+    padding: 48px 24px;
+
+    &-list
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap:32px;
+
+        &-item
+        {
+            text-align: left;
+            color: $white;
+            text-transform: uppercase;
+        }
+    }
+}
+}
+
+.head-hamburger
+{
+    @include mq(700px)
+    {
+        display: none;
+    }
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+
+.ul-tablet
+{
+    display: none;
+    @include mq(700px)
+    {
+        display: flex;
+        justify-content: space-around;
+        min-width: 370px;
+       
+    }
+}

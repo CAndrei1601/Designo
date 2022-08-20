@@ -1,0 +1,54 @@
+@use '../abstracts'as *;
+
+.footer-info {
+    color: $white;
+    padding-inline: 24px;
+
+    &-first {
+        padding-top: 256px;
+        @include flex-centre(column);
+        justify-content: space-around;
+        gap: 32px;
+
+        &-list {
+            @include flex-centre(column);
+            gap: 32px;
+
+            &-item {}
+        }
+    }
+
+
+    &-second {
+        padding-top: 40px;
+        @include flex-centre(column);
+        gap: 32px;
+        color: $white;
+
+
+
+
+        &-title {
+            font-weight: 700;
+            opacity: .5;
+
+        }
+
+        &-text {
+            opacity: .5;
+        }
+
+        &-logos {
+            @include flex-centre();
+            gap: 16px;
+
+        }
+    }
+}
+
+.footer-gradient {
+    height: 1px;
+    width: 100%;
+    background-color: $white;
+    opacity: 0.1;
+}
