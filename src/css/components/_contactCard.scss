@@ -1,31 +1,36 @@
-@use '../abstracts' as *;
-.contact-card
-{
-    margin-bottom: -190px;
-    @include flex-centre(column);
-    position: relative;
-   background-color: $peach; 
-   padding: 64px 24px;
-   color:$white;
-   border-radius: 15px;
-   overflow: hidden;
-   &-title
-   {
+@use "../abstracts" as *;
+.contact-card {
+  margin-bottom: -190px;
+  @include flex-centre(column);
+  position: relative;
+  background-color: $peach;
+  padding: 64px 24px;
+  color: $white;
+  border-radius: 15px;
+  overflow: hidden;
+  max-width: 1111px;
+  @include mq(700px) {
+    padding: 58px;
+  }
+  &-title {
     margin-bottom: 13px;
     text-align: center;
-    padding-inline:39px;
-   }
-   &-text
-   {
+    max-width: 290px;
+  }
+  &-text {
     margin-bottom: 32px;
-   }
+  }
 
-   &-image
-   {
+  &-image {
     position: absolute;
-    top:65px;
-    left:12px;
+    top: 65px;
+    left: 12px;
     width: 100%;
-     transform: scale(3) ;
-   }
+    transform: scale(3);
+    @include mq(700px) {
+      transform: scale(1);
+      top: -85px;
+      left: 2px;
+    }
+  }
 }

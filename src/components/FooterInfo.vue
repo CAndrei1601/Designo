@@ -8,7 +8,7 @@
         width="202"
         height="27"
       />
-      <span class="footer-gradient"></span>
+      <span class="footer-gradient gradient-mobile"></span>
       <ul class="footer-info-first-list">
         <li
           class="footer-info-first-list-item footer-contact"
@@ -21,6 +21,7 @@
         </li>
       </ul>
     </div>
+    <div class="footer-gradient gradient-tablet"></div>
     <ul class="footer-info-second">
       <li
         class="footer-info-second-list"

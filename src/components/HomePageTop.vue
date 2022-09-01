@@ -1,4 +1,5 @@
 <template>
+  <div class="container-card">
   <div class="head">
     <h1 class="head-title">{{ head[0].title }}</h1>
     <p class="head-text">{{ head[0].text }}</p>
@@ -8,6 +9,7 @@
       alt=""
       class="head-bottom-image"
       width="280"
+      fetchpriority="high"
     />
     <img
       src="../assets/home/desktop/bg-pattern-hero-home.svg"
@@ -15,8 +17,10 @@
       class="head-background-img"
       width="640"
       height="640"
+      fetchpriority="high"
     />
   </div>
+</div>
 </template>
 <script>
 export default {

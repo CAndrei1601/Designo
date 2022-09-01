@@ -9,7 +9,7 @@ export const useHomePageStore = defineStore('counterStore', () => {
           button: 'Learn More'
         }
       ]
-      
+
       const informations = [
         {
           title: 'PASSIONATE',
@@ -24,10 +24,10 @@ export const useHomePageStore = defineStore('counterStore', () => {
         {
           title: 'FRIENDLY ',
           text: 'We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we strive to give them the best experience a company can provide. ',
-          image: require('@/assets/home/desktop/illustration-resourceful.svg')
+          image: require('@/assets/home/desktop/illustration-friendly.svg')
         }
       ]
-  
+
 
   return { head,informations}
 })

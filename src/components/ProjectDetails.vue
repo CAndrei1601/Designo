@@ -15,9 +15,12 @@
           height="162"
         />
       </div>
+      <div class="project-card-bottom">
       <h3 class="project-card-title">{{ information.title }}</h3>
       <p class="project-card-text">{{ information.text }}</p>
     </div>
+    </div>
+
   </div>
 </template>
 <script>

@@ -1,7 +1,11 @@
 <template>
   <div class="redirect-cards">
     <div class="redirect-card" v-for="card in cards" :key="card.id">
-      <img :src="card.image" alt="" class="redirect-card-image" />
+      <picture>
+        <source :srcset="card.desktopImage" media="(min-width:1920px)">
+        <source :srcset="card.tabletImage" media="(min-width:700px)">
+        <img :src="card.image" alt="" class="redirect-card-image"  fetchpriority="medium" />
+      </picture>
       <span class="opacity-layer"></span>
       <div class="redirect-card-texts">
         <h1 class="redirect-card-title">{{ card.title }}</h1>
