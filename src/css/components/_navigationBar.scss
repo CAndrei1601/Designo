@@ -1,17 +1,27 @@
 @use '../abstracts' as *;
+
+.container-nav
+{
+  position: sticky;
+    z-index: 99999;
+    top:0;
+}
 nav
 {
     @include flex-centre;
     justify-content: space-between;
     background-color: $white;
-    position: sticky;
-    z-index: 99999;
-    top:0;
     width: 100vw;
     padding: 35px 24px;
+    max-width: 1111px;
+    margin-inline:auto ;
       @include mq(700px)
       {
         padding: 64px 39px;
+      }
+      @include mq(1024px)
+      {
+        padding: 64px 0;
       }
 }
 

@@ -3,12 +3,14 @@
     <NavigationBarVue :lists="navigationStore.lists" />
     <HomePageTop :head="homeStore.head" />
     <div class="wrapper">
+      <img class="drop-background-top" src="../assets/shared/desktop/bg-pattern-leaf.svg" alt="">
       <section class="card-redirect">
         <RedirectCard :cards="categorieStore.redirectCardInfo" />
       </section>
       <section class="project-details">
         <ProjectDetails :informations="homeStore.informations" />
       </section>
+      <img class="drop-background-bottom" src="../assets/shared/desktop/bg-pattern-leaf.svg" alt="" width="1006" height="594">
       <ContactCard :cardBottom="newsletterCardStore.cardBottom" />
     </div>
     <footer>

@@ -5,6 +5,10 @@
   @include mq(700px) {
     gap: 32px;
   }
+
+  @include mq(1024px) {
+    flex-direction: row;
+  }
 }
 
 .project-card {
@@ -14,12 +18,21 @@
     @include mq(700px) {
       flex-direction: row;
     }
+    @include mq(1024px) {
+      flex-direction: column;
+      max-width: 350px;
+      text-align: center;
+      gap: 48px;
+    }
   }
 
   &-top {
     position: relative;
     @include mq(700px) {
         width: 100%;
+      }
+      @include mq(1024px) {
+       width: fit-content;
       }
   }
 
@@ -31,6 +44,11 @@
       align-items: flex-start;
       text-align: left;
       gap: 16px;
+    }
+    @include mq(1024px) {
+      align-items: center;
+      text-align: center;
+      gap: 32px;
     }
   }
 
@@ -55,6 +73,9 @@
     position: inherit;
     z-index: 2;
     margin-bottom: 36px;
+    @include mq(1024px) {
+      margin: 0;
+     }
   }
 
   &-title,

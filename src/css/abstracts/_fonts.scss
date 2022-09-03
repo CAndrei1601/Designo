@@ -1,117 +1,124 @@
-h1
-{
-    font-family: 'Jost', sans-serif;
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 36px;
-}
+@use "./mixing" as *;
+h1 {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
 
-h2
-{
-    font-family: 'Jost', sans-serif;
-    font-weight: 500;
+  @include mq(1024px) {
     font-size: 48px;
     line-height: 48px;
-    letter-spacing:2px;
+  }
 }
 
+h2 {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: 2px;
 
-h3
-{
-    font-family: 'Jost', sans-serif;
+  @include mq(1024px) {
+    font-size: 40px;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 26px;
-    letter-spacing: 5px;
+    line-height: 48px;
+    letter-spacing: 2px;
+  }
 }
 
-p
-{
-    font-family: 'Jost', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
+h3 {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 5px;
+
+ 
 }
 
-.newsletter-form
-{
-font-family: 'Jost';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 25px;
-text-align: center;
+p {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
 }
 
-.newsletter-form-title
-{
-font-family: 'Jost';
-font-style: normal;
-font-weight: 400;
-font-size: 32px;
-line-height: 36px;
-text-align: center;
+.newsletter-form {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
 }
 
-.form-title
-{
-font-family: 'Jost', sans-serif;
-font-weight: 500;
-line-height: 48px;
-letter-spacing: 2px;
-text-align: left;
+.newsletter-form-title {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
+
+  @include mq(1024px) {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0px;
+  }
 }
 
-.form-field-empty
-{
-font-family: 'Jost', sans-serif;
-font-size: 15px;
-font-weight: 500;
-line-height: 26px;
-letter-spacing: 0px;
-text-align: left;
-color: #ffffff;
-opacity: 0.5;
+.form-title {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 2px;
+  text-align: left;
 }
 
-.form-field-full
-{
-font-family: 'Jost', sans-serif;
-font-size: 15px;
-font-weight: 500;
-line-height: 26px;
-letter-spacing: 0px;
-text-align: left;
-color: #ffffff;
+.form-field-empty {
+  font-family: "Jost", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #ffffff;
+  opacity: 0.5;
 }
 
-
-.form-field-error
-{
-font-family: 'Jost';
-font-style: italic;
-font-weight: 400;
-font-size: 12px;
-line-height: 26px;
+.form-field-full {
+  font-family: "Jost", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #ffffff;
 }
 
-.footer-contact
-{
-font-family: 'Jost', sans-serif;
-font-size: 14px;
-font-weight: 400;
-line-height: 14px;
-letter-spacing: 2px;
-text-align: left;
+.form-field-error {
+  font-family: "Jost";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 26px;
 }
 
-.nav-item
-{
-font-family: 'Jost', sans-serif;
-font-size: 24px;
-font-weight: 400;
-line-height: 25px;
-letter-spacing: 2px;
-text-align: left;
+.footer-contact {
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-align: left;
+}
 
+.nav-item {
+  font-family: "Jost", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 2px;
+  text-align: left;
 }

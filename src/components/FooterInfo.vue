@@ -6,7 +6,7 @@
         alt=""
         class="footer-info-first-logo"
         width="202"
-        height="27"
+        height="27" loading="lazy"
       />
       <span class="footer-gradient gradient-mobile"></span>
       <ul class="footer-info-first-list">
@@ -38,7 +38,7 @@
           alt=""
           class="footer-info-second-logo"
           v-for="logo in logos"
-          :key="logo.id"
+          :key="logo.id" loading="lazy"
         />
       </div>
     </ul>

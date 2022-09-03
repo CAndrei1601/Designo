@@ -4,6 +4,8 @@
     <h1 class="head-title">{{ head[0].title }}</h1>
     <p class="head-text">{{ head[0].text }}</p>
     <button>{{ head[0].button }}</button>
+    <picture>
+      <source srcset="../assets/home/desktop/phoneDesktop.png" media="(min-width:1024px)"/>
     <img
       src="../assets/home/desktop/phone-final.png"
       alt=""
@@ -11,6 +13,7 @@
       width="280"
       fetchpriority="high"
     />
+  </picture>
     <img
       src="../assets/home/desktop/bg-pattern-hero-home.svg"
       alt=""

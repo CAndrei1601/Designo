@@ -1,10 +1,10 @@
 <template>
   <div class="redirect-cards">
-    <div class="redirect-card" v-for="card in cards" :key="card.id">
+    <div :class="'redirect-card card-'+ card.id"  v-for="card in cards" :key="card.id">
       <picture>
-        <source :srcset="card.desktopImage" media="(min-width:1920px)">
+        <source :srcset="card.desktopImage" media="(min-width:1024px)">
         <source :srcset="card.tabletImage" media="(min-width:700px)">
-        <img :src="card.image" alt="" class="redirect-card-image"  fetchpriority="medium" />
+        <img :src="card.image" alt="" class="redirect-card-image"  lazyloading />
       </picture>
       <span class="opacity-layer"></span>
       <div class="redirect-card-texts">

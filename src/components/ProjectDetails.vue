@@ -12,7 +12,7 @@
           alt=""
           class="project-card-image"
           width="188"
-          height="162"
+          height="162" loading="lazy"
         />
       </div>
       <div class="project-card-bottom">

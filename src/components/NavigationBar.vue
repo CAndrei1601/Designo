@@ -1,4 +1,5 @@
 <template>
+  <div class="container-nav">
   <nav>
     <router-link to="/">
       <img
@@ -56,6 +57,7 @@
       </div>
     </Transition>
   </nav>
+</div>
 </template>
 <script>
 import { ref } from 'vue'
