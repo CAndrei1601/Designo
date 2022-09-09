@@ -1,5 +1,5 @@
 <template>
-  <div class="container-card">
+  <div class="container-card" >
   <div class="head">
     <h1 class="head-title">{{ head[0].title }}</h1>
     <p class="head-text">{{ head[0].text }}</p>
@@ -8,7 +8,11 @@
       <source srcset="../assets/home/desktop/phoneDesktop.png" media="(min-width:1024px)"/>
     <img
       src="../assets/home/desktop/phone-final.png"
-      alt=""
+       v-motion
+       :initial="{ opacity: 0, y: 100 }"
+       :enter="{ opacity: 1, y: 0, scale: 1 }"
+       :delay="300"
+      alt="phone"
       class="head-bottom-image"
       width="280"
       fetchpriority="high"

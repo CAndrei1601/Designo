@@ -1,6 +1,6 @@
 <template>
   <div class="redirect-cards">
-    <div :class="'redirect-card card-'+ card.id"  v-for="card in cards" :key="card.id">
+    <div :class="'redirect-card card-'+ card.id"  v-for="card in cards" :key="card.id"  v-motion-roll-visible-once-left    :delay="300">
       <picture>
         <source :srcset="card.desktopImage" media="(min-width:1024px)">
         <source :srcset="card.tabletImage" media="(min-width:700px)">
