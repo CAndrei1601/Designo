@@ -6,7 +6,8 @@
         alt=""
         class="footer-info-first-logo"
         width="202"
-        height="27" loading="lazy"
+        height="27"
+        loading="lazy"
       />
       <span class="footer-gradient gradient-mobile"></span>
       <ul class="footer-info-first-list">
@@ -32,15 +33,16 @@
         <p class="footer-info-second-text">{{ contact.firstText }}</p>
         <p class="footer-info-second-text">{{ contact.secondText }}</p>
       </li>
-      <div class="footer-info-second-logos">
+      <li class="footer-info-second-logos">
         <img
           :src="logo.image"
           alt=""
           class="footer-info-second-logo"
           v-for="logo in logos"
-          :key="logo.id" loading="lazy"
+          :key="logo.id"
+          loading="lazy"
         />
-      </div>
+      </li>
     </ul>
   </div>
 </template>
