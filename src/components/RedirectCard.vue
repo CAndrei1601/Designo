@@ -15,7 +15,7 @@
             :src="card.image"
             alt=""
             class="redirect-card-image"
-            lazyloading
+            loading="lazy"
           />
         </picture>
         <span class="opacity-layer"></span>

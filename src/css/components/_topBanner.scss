@@ -1,7 +1,36 @@
 @use "../abstracts" as *;
 
-.banner-container
+.banner
+{
+&-container
 {
 	width: 100%;
 	background-color: $peach;
+	position: relative;
+	overflow: hidden;
+	isolation: isolate;
+}
+
+&-background-image
+{
+	position: absolute;
+	transform: scale(2.6);
+	width: 100%;
+	height: auto;
+	top:214px;
+	left:45px;
+	z-index: -1;
+}
+&-wrapper
+{
+	padding:105px 24px;
+	text-align: center;
+	color:$white;
+}
+
+&-title
+{
+	font-weight: 500;
+	padding-bottom: 24px;
+}
 }

@@ -1,15 +1,15 @@
 <template>
   <div class="banner-container">
     <img
-      src="../assets/home/desktop/bg-pattern-hero-home.svg"
-      alt=""
-      class="head-background-img"
-      width="640"
-      height="640"
+      src="../assets/app-design/desktop/bg-pattern-intro-app.svg"
+      alt="circle with peach color"
+      class="banner-background-image"
+      width="876"
+      height="584"
       fetchpriority="high"
     />
     <div class="banner-wrapper">
-      <h1 class="banner-title">{{ banner.title }}</h1>
+      <h1 class="banner-title newsletter-form-title">{{ banner.title }}</h1>
       <p class="banner-text">{{ banner.text }}</p>
     </div>
   </div>

@@ -1,0 +1,45 @@
+@use "../abstracts" as *;
+
+
+.cards
+{
+	@include flex-centre(column);
+	gap:40px;
+	padding:96px 0;
+}
+
+.projectCard
+{
+	&-container
+	{
+		@include flex-centre(column);
+		overflow: hidden;
+		border-radius: 15px;
+		
+	}
+
+	&-image
+	{
+		width: 100%;
+	}
+
+	&-texts
+	{
+		@include flex-centre(column);
+		gap:16px;
+		background-color: $second-light-peach;
+		padding: 32px 30px;
+		text-align: center;
+	}
+
+	&-title
+	{
+		color:$peach;
+	}
+
+	&-text
+	{
+		color:$dark-gray;
+	}
+}
+
