@@ -68,6 +68,28 @@ p {
   }
 }
 
+.banner-title
+{
+	font-size: 32px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0px;
+    text-align: center;
+    padding-bottom: 14px;
+
+	@include mq(700px) {
+		font-size: 48px;
+		line-height: 48px;
+		max-width: 500px;
+		margin: 0 auto;
+		padding-bottom: 30px;
+	  }
+	  @include mq(1024px) {
+		margin: 0;
+		text-align: left;
+	  }
+}
+
 .form-title {
   font-family: "Jost", sans-serif;
   font-weight: 500;

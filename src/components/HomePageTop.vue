@@ -1,7 +1,7 @@
 <template>
   <div class="container-card">
     <div class="head">
-      <h1 class="head-title">{{ head[0].title }}</h1>
+      <h1 class="head-title banner-title">{{ head[0].title }}</h1>
       <p class="head-text">{{ head[0].text }}</p>
       <button>{{ head[0].button }}</button>
       <picture>

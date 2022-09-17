@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <NavigationBarVue :lists="navigationStore.lists" />
-    <TopBanner :banner="bannerStore.bannerInfo[0]" />
+    <TopBanner :banner="bannerStore.bannerInfo[1]" />
     <div class="wrapper">
       <img
         class="drop-background-top"
@@ -9,7 +9,7 @@
         alt=""
       />
       <section class="project-cards">
-        <ProjectCard :projects="projectsStore.projects.slice(0, 5)" />
+        <ProjectCard :projects="projectsStore.projects.slice(5, 11)" />
       </section>
       <section class="categories-cards">
         <RedirectCard :cards="filteredArray()" />
@@ -53,7 +53,7 @@ export default {
 
     const filteredArray = () => {
       return categorieStore.redirectCardInfo.filter(
-        (redirectCardInfo) => redirectCardInfo.id !== 2
+        (redirectCardInfo) => redirectCardInfo.id !== 1
       )
     }
 

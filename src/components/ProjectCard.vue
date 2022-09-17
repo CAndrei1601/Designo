@@ -1,5 +1,6 @@
 <template>
   <div
+    v-motion-roll-visible-once-bottom
     class="projectCard-container"
     v-for="project in projects"
     :key="project.id"

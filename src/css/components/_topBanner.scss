@@ -1,36 +1,58 @@
 @use "../abstracts" as *;
 
-.banner
-{
-&-container
-{
-	width: 100%;
-	background-color: $peach;
-	position: relative;
-	overflow: hidden;
-	isolation: isolate;
-}
+.banner {
+  &-container {
+    width: min(100%, 1111px);
+    margin: 0 auto;
+    background-color: $peach;
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    text-align: center;
+	z-index: 2;
 
-&-background-image
-{
-	position: absolute;
-	transform: scale(2.6);
-	width: 100%;
-	height: auto;
-	top:214px;
-	left:45px;
-	z-index: -1;
-}
-&-wrapper
-{
-	padding:105px 24px;
-	text-align: center;
-	color:$white;
-}
+	@include mq(1024px) {
+		border-radius: 15px;
+	  }
+  }
 
-&-title
-{
-	font-weight: 500;
-	padding-bottom: 24px;
-}
+  &-background-image {
+    position: absolute;
+    transform: scale(2.6);
+    width: 100%;
+    height: auto;
+    top: 214px;
+    left: 45px;
+    z-index: -1;
+
+    @include mq(700px) {
+      transform: scale(1.5) matrix(1, 0, 0, -1, 0, 0);
+      top: -100px;
+      left: 5px;
+    }
+
+	@include mq(1024px) {
+		transform: scale(0.8) matrix(1, 0, 0, 1, 0, 0);
+		top: -200px;
+		left: -200px;
+	  }
+  }
+  &-wrapper {
+    padding: 105px 24px;
+    color: $white;
+    @include flex-centre(column);
+
+	@include mq(1024px) {
+		padding: 64px 0px;
+	  }
+  }
+
+  &-title {
+    font-weight: 500;
+    padding-bottom: 24px;
+  }
+
+  &-text {
+    max-width: 350px;
+  }
 }

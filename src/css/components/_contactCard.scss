@@ -1,4 +1,13 @@
 @use "../abstracts" as *;
+
+.contact-section {
+  max-width: 696px;
+  margin: 0 auto;
+
+  @include mq(1024px) {
+    max-width: 1111px;
+  }
+}
 .contact-card {
   margin-bottom: -190px;
   @include flex-centre(column);
@@ -12,11 +21,9 @@
 
   @include mq(1024px) {
     justify-content: space-between;
- 
   }
 
-  &-first
-  {
+  &-first {
     @include flex-centre(column);
     @include mq(1024px) {
       justify-content: flex-start;
@@ -27,7 +34,7 @@
     padding: 58px;
   }
   @include mq(1024px) {
-   flex-direction: row;
+    flex-direction: row;
   }
   &-title {
     margin-bottom: 13px;
@@ -35,7 +42,7 @@
     max-width: 290px;
     @include mq(1024px) {
       text-align: left;
-     }
+    }
   }
   &-text {
     margin-bottom: 32px;
@@ -44,7 +51,7 @@
     }
     @include mq(1024px) {
       text-align: left;
-     }
+    }
   }
 
   &-image {
@@ -58,5 +65,10 @@
       top: -85px;
       left: 2px;
     }
+	@include mq(1024px) {
+		transform: scale(0.7);
+		top:-200px;
+		left: 140px;
+	  }
   }
 }

@@ -2,6 +2,8 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomePage from "/src/pages/HomePage.vue";
 import AppDesign from "/src/pages/AppDesign.vue";
+import WebDesign from "/src/pages/WebDesign.vue";
+import GraphicDesign from "/src/pages/GraphicDesign.vue";
 
 const routes = [
   {
@@ -13,6 +15,16 @@ const routes = [
     path: "/app-design",
     name: "app-design",
     component: AppDesign,
+  },
+  {
+    path: "/web-design",
+    name: "web-design",
+    component: WebDesign,
+  },
+  {
+    path: "/graphic-design",
+    name: "graphic-design",
+    component: GraphicDesign,
   },
   {
     path: "/about",
@@ -28,6 +40,9 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
+  scrollBehavior() {
+    return { top: 0 };
+  },
 });
 
 export default router;

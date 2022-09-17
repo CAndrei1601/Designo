@@ -1,45 +1,73 @@
 @use "../abstracts" as *;
 
+.project-cards {
+  @include flex-centre(column);
+  gap: 40px;
+  padding: 96px 0;
+  flex-wrap: wrap;
 
-.cards
-{
-	@include flex-centre(column);
-	gap:40px;
-	padding:96px 0;
+  @include mq(700px) {
+    gap: 32px;
+  }
+  @include mq(1024px) {
+    gap: 30px;
+	flex-direction: row;
+
+	justify-content: flex-start
+  }
 }
 
-.projectCard
-{
-	&-container
-	{
-		@include flex-centre(column);
-		overflow: hidden;
-		border-radius: 15px;
-		
-	}
+.projectCard {
+  &-container {
+    @include flex-centre(column);
+    overflow: hidden;
+    border-radius: 15px;
+    max-width: 327px;
 
-	&-image
-	{
-		width: 100%;
-	}
+    @include mq(700px) {
+      flex-direction: row;
+      max-width: fit-content;
+    }
 
-	&-texts
-	{
-		@include flex-centre(column);
-		gap:16px;
-		background-color: $second-light-peach;
-		padding: 32px 30px;
-		text-align: center;
-	}
+    @include mq(1024px) {
+      flex-direction: column;
+      max-width: fit-content;
+    }
+  }
 
-	&-title
-	{
-		color:$peach;
-	}
+  &-image {
+    width: 100%;
+    flex: 1;
+  }
 
-	&-text
-	{
-		color:$dark-gray;
-	}
+  &-texts {
+    @include flex-centre(column);
+    gap: 16px;
+    background-color: $second-light-peach;
+    padding: 32px 30px;
+    text-align: center;
+    flex: 1;
+
+    @include mq(700px) {
+      padding: 112px 30px;
+      height: auto;
+    }
+
+	@include mq(1024px) {
+		padding:32px;
+
+	  }
+  }
+
+  &-title {
+    color: $peach;
+  }
+
+  &-text {
+    color: $dark-gray;
+
+    @include mq(700px) {
+      max-width: 286px;
+    }
+  }
 }
-
