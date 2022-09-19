@@ -14,17 +14,29 @@ const routes = [
   {
     path: "/app-design",
     name: "app-design",
-    component: AppDesign,
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../pages/AppDesign.vue"),
   },
   {
     path: "/web-design",
     name: "web-design",
-    component: WebDesign,
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../pages/WebDesign.vue"),
   },
   {
     path: "/graphic-design",
     name: "graphic-design",
-    component: GraphicDesign,
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../pages/GraphicDesign.vue"),
   },
   {
     path: "/about",
@@ -33,7 +45,7 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+      import(/* webpackChunkName: "about" */ "../pages/AboutUs.vue"),
   },
 ];
 

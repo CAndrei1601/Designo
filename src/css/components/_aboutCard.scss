@@ -1,0 +1,67 @@
+@use "../abstracts" as *;
+
+.about-card
+{
+	@include flex-centre(column);
+	align-items: stretch;
+	&-main-image
+	{
+		width: 100%;
+		height: auto;
+
+		
+	@include mq(1024px)
+	{
+
+		min-width: 476px;
+	}
+	}
+
+	@include mq(700px)
+	{
+
+		border-radius: 15px;
+		overflow: hidden
+	}
+
+	@include mq(1024px)
+	{
+
+		flex-direction: row
+	}
+
+	&-container
+	{
+		@include flex-centre(column);
+		text-align: center;
+		padding: 80px 24px;
+		background-color: $second-light-peach;
+		position: relative;
+		overflow: hidden;
+		isolation: isolate;
+		&-title
+		{
+			padding-bottom: 24px;
+			color: $peach;
+			font-weight: 500;
+		}
+		&-texts
+		{
+			@include flex-centre(column);
+			gap:32px;
+		}
+
+		&-image
+		{
+			position: absolute;
+			top:-50px;
+			transform: scale(2.2) rotate(90deg);
+			left: -100vw;
+			z-index: -1;
+			opacity: 0.3;
+
+		}
+	}
+
+
+}

@@ -1,0 +1,110 @@
+@use "../abstracts" as *;
+
+.wrapper-about
+{
+
+	@include mq(700px)
+	{
+		padding:0 40px;
+	}
+
+	@include mq(1024px)
+	{
+		max-width: 1111px;
+		margin:0 auto;
+	}
+}
+
+
+.contact-section
+{
+	padding:0 24px;
+}
+
+.about-us
+{
+
+&-first
+{
+	@include flex-centre(column);
+	align-items: stretch;
+	overflow: hidden;
+	
+	@include mq(700px)
+	{
+		padding-bottom: 120px;
+		border-radius: 15px;
+	}
+
+	@include mq(1024px)
+	{
+		flex-direction: row;
+	}
+	&-image
+	{
+		width: 100%;
+		height: auto;
+
+
+		@include mq(1024px)
+	{
+		min-width:476px;
+		order:2;
+	}
+	}
+
+	&-container
+	{
+		background-color: $peach;
+		position: relative;
+		color: $white;
+		@include flex-centre(column);
+		padding: 80px 24px;
+		overflow: hidden;
+		isolation: isolate;
+	
+
+		@include mq(700px)
+	{
+		border-bottom-left-radius: 15px;
+		border-bottom-right-radius: 15px;
+	}
+	@include mq(1024px)
+	{
+		order: 1;
+	}
+
+		&-title
+		{
+			padding-bottom: 24px;
+			font-weight: 500;
+		}
+
+		&-image{
+			position: absolute;
+			top:110px;
+			right:60vw;
+			transform: scale(2);
+			z-index: -1;
+		}
+
+		&-text
+		{
+			text-align: center;
+		}
+	}
+
+}
+	
+	
+}
+
+.about-us-section
+{
+	&-second,
+	&-third,
+	&-fourth
+	{
+		padding-bottom: 120px
+	}
+}
