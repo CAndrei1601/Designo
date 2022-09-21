@@ -13,7 +13,7 @@
           src="../assets/home/desktop/phone-final.png"
           v-motion
           :initial="{ opacity: 0, y: 100 }"
-          :enter="{ opacity: 1, y: 0, scale: 1 }"
+          :enter="{ opacity: 1, y: 0 }"
           :delay="300"
           alt="phone"
           class="head-bottom-image"

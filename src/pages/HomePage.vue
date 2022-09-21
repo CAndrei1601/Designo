@@ -64,7 +64,7 @@
 
 .card-1 {
   grid-area: a;
-  @include mq(1024px) {
+  @media screen and (min-width: 1024px) {
     min-height: 640px;
   }
 }

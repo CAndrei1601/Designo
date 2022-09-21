@@ -39,6 +39,12 @@
 		position: relative;
 		overflow: hidden;
 		isolation: isolate;
+
+		@include mq(1024px)
+		{
+			padding: 154px 94px;
+			align-items: flex-start;
+		}
 		&-title
 		{
 			padding-bottom: 24px;
@@ -49,19 +55,54 @@
 		{
 			@include flex-centre(column);
 			gap:32px;
+
+			@include mq(1024px)
+		{
+			text-align: left;
+		
+		}
 		}
 
 		&-image
 		{
 			position: absolute;
-			top:-50px;
-			transform: scale(2.2) rotate(90deg);
-			left: -100vw;
+			top:134px;
+			transform: scale(1.5) ;
+			left: 108px;
 			z-index: -1;
-			opacity: 0.3;
+			opacity: 1;
+
+			@include mq(700px)
+			{
+				top:-180px;
+				left:10px;
+				transform: scale(1);
+			}
+			
+			@include mq(1024px)
+			{
+				top:130px;
+				left:-130px;
+				transform: scale(1);
+			}
 
 		}
 	}
 
 
+}
+.orderOne
+{
+	@include mq (1024px)
+	{
+		order:1;
+	}
+}
+
+.orderTwo
+{
+	@include mq (1024px)
+	{
+		order:2;
+	}
 }

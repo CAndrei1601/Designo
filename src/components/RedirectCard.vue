@@ -3,8 +3,10 @@
     :class="'redirect-card card-' + card.id"
     v-for="card in cards"
     :key="card.id"
-    v-motion-roll-visible-once-left
-    :delay="300"
+    v-motion
+    :initial="{ opacity: 0, x: -100 }"
+    :visible="{ opacity: 1, x: 0 }"
+    :delay:="300"
   >
     <router-link :to="'/' + card.route">
       <picture>
